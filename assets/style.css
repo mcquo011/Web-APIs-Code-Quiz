@@ -1,0 +1,21 @@
+body {
+background: rgb(209,222,221);
+background: radial-gradient(circle, rgba(209,222,221,1) 0%, rgba(104,231,227,0.6965379901960784) 44%, rgba(224,237,223,1) 100%);
+
+    padding: 10px;
+}
+
+.wrapper {
+  width: 50%;
+  margin: auto;
+  border-style: dashed;
+  padding: 20px;
+  margin-top: 100px;
+  background-color: lightgray;
+}
+
+.btn {
+border-radius: 5px;
+margin-top: 20px;
+
+}
