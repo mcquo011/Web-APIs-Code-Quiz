@@ -8,23 +8,15 @@
     <title>Code Quiz</title>
 </head>
 <body>
-    <header>
-        <div id="timer"></div>
-        <div id="highScore">View High scores</div>
-    </header>
-    <div class="wrapper">
-    <section class="quiz">
-        <div id="question"> <p> question </p> </div>
-    </section>
-    <section id="choices">
-        <div class="choice" id="A" onclick="checkAnswer('A')">A</div>
-         <div class="choice" id="B" onclick="checkAnswer('B')">B</div>
-          <div class="choice" id="C" onclick="checkAnswer('C')">C</div>
-           <div class="choice" id="D" onclick="checkAnswer('D')">D</div>
-           <button class ="btn" id="start-button">Start Game</button>
-    </section>
-    </div>
-    <section id="score"></section>
-    <script src="./assets/script.js"></script>
+ <!-- main div-->
+ <div class="container">
+   <div id="home" class="flex-column flex-center">
+    <h1>Code Quiz</h1>
+    <p>Click the start game button to begin the quiz. You have 60 seconds to answer all four questions. However, be careful because 10 seconds will be deducted from the timer if you get one inocorrect. Have fun!</p>
+    <a href="game.html" class="button">Start Game</a>
+    <a href="./highscore.html" id="highscore" class="button">high scores</a>
+   </div>
+ </div>
+
 </body>
 </html>

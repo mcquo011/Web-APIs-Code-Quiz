@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./assets/style.css" />
+    <title>Quiz</title>
+</head>
+<body>
+    <div class="container">
+        <div id="game" class="center flex-column">
+            <div class="display">
+                    <div class="display-item">
+                        <h1 class="display-main-text" id="timer">Timer:</h1>
+                    </div>
+                </div>
+                <div id="question">Question</div>
+                <div class="choice">
+                    <p class="choice-text" data-number="1"></p>
+                </div>
+                 <div class="choice">
+                    <p class="choice-text" data-number="2"></p>
+                </div>
+                 <div class="choice">
+                    <p class="choice-text" data-number="3"></p>
+                </div>
+                 <div class="choice">
+                    <p class="choice-text" data-number="4"></p>
+                </div>
+                <div id="incorrect"></div>
+            </div>
+
+        </div>
+        <div class="end-quiz">
+        <div id="results">
+        <!-- this element will be used to display the final score and message that the quiz is over -->
+      </div>
+            <input class="input" type="text" id="initials" placeholder="Enter your initials">
+    </div>
+      
+    <script src="./assets/script.js"></script>
+</body>
+</html>

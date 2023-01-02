@@ -1,21 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   /* border: 1px solid black; */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
 body {
-background: rgb(209,222,221);
-background: radial-gradient(circle, rgba(209,222,221,1) 0%, rgba(104,231,227,0.6965379901960784) 44%, rgba(224,237,223,1) 100%);
+    background-color: aliceblue;
+}
 
+h1 {
+    font-size: 40px;
+    color: rgb(65, 65, 147);
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-bottom: 50px;
+}
+
+p {
+    margin-bottom: 30px;
+    width: 75%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+
+.button {
+    font-size: 15px;
     padding: 10px;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 1rem;
+    background-image: linear-gradient(to right, #7474BF 0%, #348AC7 51%, #7474BF 100%);
+    border-radius: 5px;
+    color: white;
 }
 
-.wrapper {
-  width: 50%;
-  margin: auto;
-  border-style: dashed;
-  padding: 20px;
-  margin-top: 100px;
-  background-color: lightgray;
+.button:hover {
+    background-position: right center;
+    cursor: pointer;
+    transition: transform 150ms;
+    transform: scale(1.03);
 }
 
-.btn {
-border-radius: 5px;
-margin-top: 20px;
+button[disabled]:hover {
+    cursor: not-allowed;
+    transform: none;
+}
 
+#highscore {
+    background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%);
+}
+
+ /*styling for quiz*/
+.choice {
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 3px;
+    background: rgb(113, 113, 190);
+    font-size: 20px;
+    color: white;
+    min-width: 50rem;
+}
+
+.choice:hover {
+    cursor: pointer;
+}
+
+.choice-options {
+    padding: 5px 5px;
+    margin-bottom: 0px;
+    margin-top: 0 auto;
+}
+
+.choice-text {
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+display {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* CSS for end screen */
+
+.end-quiz {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    padding: 5px;
+    margin-bottom: 25px;
+}
+
+.input {
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 5px;
+
+}
+
+.initial-button {
+    color: #348AC7;
+}
+
+.box {
+    padding: 10px;
+    
+}
+
+#timer {
+    font-size: 20px;
+}
+
+#question {
+    margin-bottom: 20px;
+    font-size: 35px;
 }
