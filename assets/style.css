@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
    /* border: 1px solid black; */
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body {
@@ -18,6 +18,7 @@ h1 {
 
 h2 {
     margin-bottom: 50px;
+    color: rgb(65, 65, 147);
 }
 
 p {
@@ -58,7 +59,7 @@ a {
 .button {
     font-size: 15px;
     padding: 10px;
-    width: 50%;
+    width: 40%;
     text-align: center;
     margin-bottom: 1rem;
     background-image: linear-gradient(to right, #7474BF 0%, #348AC7 51%, #7474BF 100%);
@@ -86,12 +87,11 @@ button[disabled]:hover {
 .choice {
     display: flex;
     margin-bottom: 20px;
-    width: 100%;
     border-radius: 3px;
     background: rgb(113, 113, 190);
     font-size: 20px;
     color: white;
-    min-width: 50rem;
+    min-width: 40rem;
 }
 
 .choice:hover {
@@ -106,8 +106,9 @@ button[disabled]:hover {
 
 .choice-text {
     padding: 5px;
-    width: 100%;
-    text-align: center;
+    width: 70%;
+    text-align: left;
+    margin-left: 10px;
 }
 
 display {
@@ -138,6 +139,7 @@ display {
 
 .box {
     padding: 10px;
+
     
 }
 
@@ -148,4 +150,8 @@ display {
 #question {
     margin-bottom: 20px;
     font-size: 35px;
+}
+
+#backBtn {
+    color: white;
 }
