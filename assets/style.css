@@ -13,12 +13,12 @@ body {
 h1 {
     font-size: 40px;
     color: rgb(65, 65, 147);
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 h2 {
-    margin-bottom: 50px;
-    color: rgb(65, 65, 147);
+    margin-bottom: 40px;
+    color: whitesmoke;
 }
 
 p {
@@ -65,6 +65,8 @@ a {
     background-image: linear-gradient(to right, #7474BF 0%, #348AC7 51%, #7474BF 100%);
     border-radius: 5px;
     color: white;
+    border: solid rgb(58, 22, 107);
+    font-weight: bold;
 }
 
 .button:hover {
@@ -74,10 +76,6 @@ a {
     transform: scale(1.03);
 }
 
-button[disabled]:hover {
-    cursor: not-allowed;
-    transform: none;
-}
 
 #highscore {
     background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%);
@@ -92,6 +90,7 @@ button[disabled]:hover {
     font-size: 20px;
     color: white;
     min-width: 40rem;
+
 }
 
 .choice:hover {
@@ -143,15 +142,74 @@ display {
     
 }
 
+.high-score-list {
+    list-style-type: none;
+    margin-bottom: 20px;
+    color: rgb(15, 14, 14);
+    background-color: white;
+    padding: 10px 10px; 
+    opacity: 0.7;
+    width: 100%
+    
+   
+   
+}
+
+.scores {
+    background-color: #9696da;
+}
+
 #timer {
     font-size: 20px;
 }
 
 #question {
-    margin-bottom: 20px;
-    font-size: 35px;
+    margin-bottom: 25px;
+    font-size: 25px;
+    border-bottom: #7474BF solid;
 }
 
 #backBtn {
     color: white;
+    background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, hsl(191, 100%, 50%) 100%);
+    padding: 5px;
+    border-radius: 5px;
+    
+    
+}
+
+#clearBtn {
+    background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#backBtn:hover {
+    cursor: pointer;
+      transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+#clearBtn:hover {
+    cursor: pointer;
+     transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+#Submit {
+    background-image: linear-gradient(to right, #7474BF 0%, #348AC7 51%, #7474BF 100%);
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+#Submit:hover {
+     cursor: pointer;
+      transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+#results {
+    font-size: 25px;
 }
