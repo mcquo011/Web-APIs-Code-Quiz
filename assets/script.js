@@ -1,14 +1,14 @@
 let question = document.querySelector('#question');
 let choices = Array.from(document.querySelectorAll('.choice-text'));
 let container = document.querySelector('.container')
-let timerText = document.querySelector("#timer");
+let timerText = document.querySelector('#timer');
 let score = 0;
 let timer = 60;
 let currentQuestionIndex = 0;
   let AnswerMessage = document.querySelector(
     "#incorrect"
   );
-  let initialsInput = document.querySelector("#initials");
+  let initialsInput = document.querySelector('#initials');
   let Submit = document.querySelector('.end-quiz');
   
 let questions = [
@@ -46,16 +46,29 @@ let questions = [
   }
 ];
 
+// hide the input box and submit button initially
+document.querySelector('#initials').style.display = 'none';
+document.querySelector('.end-quiz').style.display = 'none';
+
+// define a function to show the input box and submit button
+function showInput() {
+  document.querySelector('#initials').style.display = 'block';
+  document.querySelector('.end-quiz').style.display = 'block';
+}
+
 
 function startTimer() {
   // set interval to update timer every second
   let timerInterval = setInterval(function () {
     timer--;
-     timerText.textContent = "Timer: " + timer;
+    timerText.textContent = "Timer: " + timer;
 
     if (timer === 0) {
       clearInterval(timerInterval);
-      // add code here to handle what should happen when the timer reaches 0
+      // show an alert saying "Time is up!" before redirecting to the welcome page
+      alert("Time is up!");
+
+      window.location.href = "index.html";
     }
   }, 1000);
 }
@@ -67,10 +80,12 @@ function renderQuestion() {
   if (currentQuestionIndex >= questions.length) {
     // quiz is over, calculate and display final score
   let finalScore = (score / questions.length) * 100;
-    let results = document.querySelector("#results");
+    let results = document.querySelector('#results');
     results.innerHTML = `Quiz is over!`;
     results.innerHTML += `<br> Your score is ${finalScore}%`;
     container.style.display = "none";
+    // show the input box and submit button
+    showInput();
   } else {
     let currentQuestion = questions[currentQuestionIndex];
     question.innerHTML = currentQuestion.question;
@@ -78,6 +93,8 @@ function renderQuestion() {
       choice.parentElement.style.display = "block";
       choice.innerHTML = currentQuestion[`choice${choice.dataset.number}`];
     });
+    // clear the "Correct!" and "Incorrect answer! 10 seconds have been deducted" messages
+    AnswerMessage.innerHTML = "";
   }
 }
 
@@ -85,27 +102,24 @@ choices.forEach((choice) => {
   choice.addEventListener("click", function () {
     let choiceNumber = parseInt(this.dataset.number, 10);
     if (choiceNumber === questions[currentQuestionIndex].answer) {
-      // answer is correct, increment score and currentQuestionIndex, and render next question
+      // answer is correct, increment score and display "Correct!" message
       score++;
-      currentQuestionIndex++;
-      AnswerMessage.innerHTML =
-        "Correct!";
-      renderQuestion();
+      AnswerMessage.innerHTML = "Correct!";
     } else {
-      // answer is incorrect, decrease timer and display message to user
-      timer -= 10; 
+      // answer is incorrect, decrease timer and display "Incorrect answer! 10 seconds have been deducted" message
+      timer -= 10;
       AnswerMessage.innerHTML =
-        "Incorrect answer! 10 seconds have been subtracted from your timer.";
-      currentQuestionIndex++; // move on to the next question
-      renderQuestion(); // re-render the quiz
+        "Incorrect answer! 10 seconds have been deducted";
     }
+    // add a delay before rendering the next question
+    setTimeout(function () {
+      // clear the message before rendering the next question
+      AnswerMessage.innerHTML = "";
+      currentQuestionIndex++;
+      renderQuestion();
+    }, 1000); // this will delay the rendering of the next question by 2 seconds (2000 milliseconds)
   });
 });
-
-// when i submit my initials it will bring me to the high score html and display my high score. 
-// I can clear the high scores 
-// the high scores will stay and can be accessed from the welcome page if i dont clear them
-
 
 let SubmitInitials = document.createElement("button");
 SubmitInitials.setAttribute("type", "Submit");

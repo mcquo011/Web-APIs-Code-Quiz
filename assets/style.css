@@ -110,11 +110,6 @@ a {
     margin-left: 10px;
 }
 
-display {
-    display: flex;
-    justify-content: space-between;
-}
-
 /* CSS for end screen */
 
 .end-quiz {
@@ -150,9 +145,6 @@ display {
     padding: 10px 10px; 
     opacity: 0.7;
     width: 100%
-    
-   
-   
 }
 
 .scores {
@@ -212,4 +204,90 @@ display {
 
 #results {
     font-size: 25px;
+}
+
+@media screen and (max-width: 950px) {
+  p {
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%
+}
+
+.container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color: rgb(65, 65, 147);
+    margin-bottom: 20px;
+}
+
+.button {
+    font-size: 15px;
+    padding: 5px;
+    width: 60%;
+    text-align: center;
+    margin-bottom: 1rem;
+    background-image: linear-gradient(to right, #7474BF 0%, #348AC7 51%, #7474BF 100%);
+    border-radius: 5px;
+    color: white;
+    border: solid rgb(58, 22, 107);
+    font-weight: bold;
+}
+
+.button:hover {
+    background-position: right center;
+    cursor: pointer;
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+
+#highscore {
+    background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%);
+}
+
+/* media queries for quiz */
+
+ /*styling for quiz*/
+.choice {
+    margin-bottom: 20px;
+    border-radius: 3px;
+    background: rgb(113, 113, 190);
+    font-size: 20px;
+    color: white;
+
+
+}
+
+.choice:hover {
+    cursor: pointer;
+}
+
+.choice-options {
+    padding: 5px 5px;
+    margin-bottom: 0px;
+    margin-top: 0 auto;
+}
+
+.choice-text {
+    width: 100px;
+    text-align: left;
+}
+
+
+
+/* media queries for high scores */
+
+.scores {
+    background-color: #9696da;
+    width: 75%;
+}
+
 }
