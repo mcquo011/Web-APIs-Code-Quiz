@@ -56,23 +56,24 @@ function showInput() {
   document.querySelector('.end-quiz').style.display = 'block';
 }
 
+let timerInterval;
 
 function startTimer() {
   // set interval to update timer every second
-  let timerInterval = setInterval(function () {
+  timerInterval = setInterval(function () {
     timer--;
     timerText.textContent = "Timer: " + timer;
 
     if (timer === 0) {
       clearInterval(timerInterval);
-      // show an alert saying "Time is up!" before redirecting to the welcome page
+      // show an alert saying "Time is up!" 
       alert("Time is up!");
 
       let finalScore = (score / questions.length) * 100;
       let results = document.querySelector("#results");
       results.innerHTML = `Quiz is over! Your score is ${finalScore}%`;
       container.style.display = "none";
-      // show the input box and submit button
+      // show the input box and submit button when game is over or timer is up
       document.querySelector("#initials").style.display = "block";
       document.querySelector(".end-quiz").style.display = "block";
     }
@@ -92,6 +93,9 @@ function renderQuestion() {
     container.style.display = "none";
     // show the input box and submit button
     showInput();
+
+    // stop timer
+    clearInterval(timerInterval);
   } else {
     let currentQuestion = questions[currentQuestionIndex];
     question.innerHTML = currentQuestion.question;
@@ -99,8 +103,6 @@ function renderQuestion() {
       choice.parentElement.style.display = "block";
       choice.innerHTML = currentQuestion[`choice${choice.dataset.number}`];
     });
-    // clear the "Correct!" and "Incorrect answer! 10 seconds have been deducted" messages after every question
-    AnswerMessage.innerHTML = "";
   }
 }
 
