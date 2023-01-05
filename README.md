@@ -30,15 +30,15 @@ Image showing the welcome page to the quiz:
 
 The user can easily see the timer while answering questions: 
 
-![Questions](./assets/images/questions.png?raw=true "Screenshot of question")
+![Alt text question page](/assets/images/questions.png?raw=true "Screenshot of question")
 
 The user recieves their final score and can submit their score and initials: 
 
-![End page](./assets/images/end.png?raw=true "Screenshot of end of quiz")
+![Alt text end page](./assets/images/end.png?raw=true "Screenshot of end of quiz")
 
 The user is then directed to the high score page where they can see other scores and clear high scores: 
 
-![High scores page](./assets/images/highscore.png?raw=true "Screenshot of highscores")
+![Alt text highscore page](./assets/images/highscore.png?raw=true "Screenshot of highscores")
 
 ## License 
 
