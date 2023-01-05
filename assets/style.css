@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
    /* border: 1px solid black; */
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
 
 h1 {
     font-size: 40px;
-    color: rgb(65, 65, 147);
+    color: #464bc6;
     margin-bottom: 20px;
 }
 
@@ -29,6 +29,7 @@ p {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 .container {
@@ -86,7 +87,7 @@ a {
     display: flex;
     margin-bottom: 20px;
     border-radius: 3px;
-    background: rgb(113, 113, 190);
+    background:#98b4d4;
     font-size: 20px;
     color: white;
     min-width: 40rem;
@@ -108,6 +109,7 @@ a {
     width: 70%;
     text-align: left;
     margin-left: 10px;
+    color: black;
 }
 
 /* CSS for end screen */
@@ -148,7 +150,8 @@ a {
 }
 
 .scores {
-    background-color: #9696da;
+    background-color: #98b4d4;
+  
 }
 
 #timer {
@@ -158,7 +161,7 @@ a {
 #question {
     margin-bottom: 25px;
     font-size: 25px;
-    border-bottom: #7474BF solid;
+    border-bottom: #98b4d4 solid;
 }
 
 #backBtn {
@@ -206,7 +209,7 @@ a {
     font-size: 25px;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 650px) {
   p {
     margin-bottom: 30px;
     text-align: center;

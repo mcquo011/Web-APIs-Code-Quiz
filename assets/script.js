@@ -68,7 +68,13 @@ function startTimer() {
       // show an alert saying "Time is up!" before redirecting to the welcome page
       alert("Time is up!");
 
-      window.location.href = "index.html";
+      let finalScore = (score / questions.length) * 100;
+      let results = document.querySelector("#results");
+      results.innerHTML = `Quiz is over! Your score is ${finalScore}%`;
+      container.style.display = "none";
+      // show the input box and submit button
+      document.querySelector("#initials").style.display = "block";
+      document.querySelector(".end-quiz").style.display = "block";
     }
   }, 1000);
 }
@@ -93,7 +99,7 @@ function renderQuestion() {
       choice.parentElement.style.display = "block";
       choice.innerHTML = currentQuestion[`choice${choice.dataset.number}`];
     });
-    // clear the "Correct!" and "Incorrect answer! 10 seconds have been deducted" messages
+    // clear the "Correct!" and "Incorrect answer! 10 seconds have been deducted" messages after every question
     AnswerMessage.innerHTML = "";
   }
 }
@@ -117,7 +123,7 @@ choices.forEach((choice) => {
       AnswerMessage.innerHTML = "";
       currentQuestionIndex++;
       renderQuestion();
-    }, 1000); // this will delay the rendering of the next question by 2 seconds (2000 milliseconds)
+    }, 1000); 
   });
 });
 

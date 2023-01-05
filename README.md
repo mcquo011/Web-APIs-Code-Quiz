@@ -12,7 +12,7 @@ Used git clone to connect my repo to my local device.
 
 ## Usage
 
-This quiz can be used to test your knowledge on basic coding. To play the quiz, press the start game button. You'll get 60 seconds to answer four questions. Be careful, because with every wrong answer, 10 seconds get deducted from the timer. If you don't finish in time, you'll be redirected to the welcome page so you can try again. Once finished, the user can see their score and submit their initials. This will bring them to the highscore page so they can compare their score to others. 
+This quiz can be used to test your knowledge on basic coding. To play the quiz, press the start game button. You'll get 60 seconds to answer four questions. Be careful, because with every wrong answer, 10 seconds get deducted from the timer. Once finished, the user can see their score and submit their initials. This will bring them to the highscore page so they can compare their score to others. 
 
 ## Contributing
 
