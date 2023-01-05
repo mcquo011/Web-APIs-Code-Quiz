@@ -20,6 +20,10 @@ HTML, CSS style sheet, and JavaScript by Maggie McQuown.
 
 ## Screenshot
 
+Image showing the welcome page to the quiz
+
+![Alt text](/Web-APIs-Code-Quiz/assets/images/welcome.png?raw=true "Screenshot of welcome page of quiz")
+
 ## License 
 
 MIT

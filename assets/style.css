@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   /* border: 1px solid black; */
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -12,13 +11,13 @@ body {
 
 h1 {
     font-size: 40px;
-    color: #464bc6;
+    color: #3a7bd5;
     margin-bottom: 20px;
 }
 
 h2 {
     margin-bottom: 40px;
-    color: whitesmoke;
+    color: #4848ae ;
 }
 
 p {
@@ -65,9 +64,9 @@ a {
     margin-bottom: 1rem;
     background-image: linear-gradient(to right, #7474BF 0%, #348AC7 51%, #7474BF 100%);
     border-radius: 5px;
-    color: white;
-    border: solid rgb(58, 22, 107);
+    color: rgb(255, 255, 255);
     font-weight: bold;
+    border: solid #4848ae;
 }
 
 .button:hover {
@@ -82,12 +81,11 @@ a {
     background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%);
 }
 
- /*styling for quiz*/
 .choice {
     display: flex;
     margin-bottom: 20px;
     border-radius: 3px;
-    background:#98b4d4;
+    background:#3a7bd5;
     font-size: 20px;
     color: white;
     min-width: 40rem;
@@ -109,10 +107,8 @@ a {
     width: 70%;
     text-align: left;
     margin-left: 10px;
-    color: black;
+    color: white;
 }
-
-/* CSS for end screen */
 
 .end-quiz {
     display: block;
@@ -150,7 +146,7 @@ a {
 }
 
 .scores {
-    background-color: #98b4d4;
+    background-color: #a6bfdb;
   
 }
 
@@ -161,7 +157,13 @@ a {
 #question {
     margin-bottom: 25px;
     font-size: 25px;
-    border-bottom: #98b4d4 solid;
+    border-bottom: #3a7bd5 solid;
+}
+
+#incorrect {
+    font-size: 20px;
+    color: black;
+
 }
 
 #backBtn {
@@ -169,7 +171,7 @@ a {
     background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, hsl(191, 100%, 50%) 100%);
     padding: 5px;
     border-radius: 5px;
-    
+    border: solid #4848ae;
     
 }
 
@@ -178,6 +180,7 @@ a {
     color: white;
     padding: 5px;
     border-radius: 5px;
+    border: solid #4848ae;
 }
 
 #backBtn:hover {
@@ -197,6 +200,7 @@ a {
     color: white;
     padding: 3px;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 #Submit:hover {
@@ -222,6 +226,7 @@ a {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    
 }
 
 h1 {
@@ -265,8 +270,15 @@ h1 {
     background: rgb(113, 113, 190);
     font-size: 20px;
     color: white;
+    width: 100%;
+    min-width: 20rem;
 
+}
 
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .choice:hover {
@@ -283,8 +295,6 @@ h1 {
     width: 100px;
     text-align: left;
 }
-
-
 
 /* media queries for high scores */
 

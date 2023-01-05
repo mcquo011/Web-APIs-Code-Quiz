@@ -32,7 +32,7 @@ let questions = [
     question: "How does a FOR loop start?",
     choice1: "for (i <=2; i++)",
     choice2: "for (i = 0; i <= 2, i++)",
-    choice3: "for i = 1 to 5)",
+    choice3: "for (i = 1 to 5)",
     choice4: "for (i = 0; i <=5)",
     answer: 2,
   },
