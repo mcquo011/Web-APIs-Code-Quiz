@@ -30,7 +30,7 @@ Image showing the welcome page to the quiz:
 
 The user can easily see the timer while answering questions: 
 
-![image](./assets/images/questions.png?raw=true)
+![image](./assets/images/questions.png)
 
 The user recieves their final score and can submit their score and initials: 
 
