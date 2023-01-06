@@ -66,7 +66,7 @@ a {
     border-radius: 5px;
     color: rgb(255, 255, 255);
     font-weight: bold;
-    border: solid #4848ae;
+    border: solid 1px #4848ae;
 }
 
 .button:hover {
@@ -171,7 +171,7 @@ a {
     background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, hsl(191, 100%, 50%) 100%);
     padding: 5px;
     border-radius: 5px;
-    border: solid #4848ae;
+    border: solid 1px #4848ae;
     
 }
 
@@ -180,7 +180,7 @@ a {
     color: white;
     padding: 5px;
     border-radius: 5px;
-    border: solid #4848ae;
+    border: solid 1px #4848ae;
 }
 
 #backBtn:hover {
@@ -201,7 +201,7 @@ a {
     padding: 3px;
     border-radius: 5px;
     margin-top: 10px;
-    border: solid #4848ae;
+    border: solid 1px #4848ae;
 }
 
 #Submit:hover {
