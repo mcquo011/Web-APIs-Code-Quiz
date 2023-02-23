@@ -10,6 +10,13 @@ To get this project up and running you can follow the deployed GitHub Pages link
 
 [Deployed application](https://mcquo011.github.io/Web-APIs-Code-Quiz/)
 
+## Built with 
+
+* HTML
+* CSS
+* JavaScript
+* Local Storage
+
 ## Installation 
 
 Used git clone to connect my repo to my local device.
